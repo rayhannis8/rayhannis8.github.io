@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gvbet娱乐城-热门游戏平台与在线娱乐指南</title>
+    <meta name="description" content="gvbet娱乐城是集体育赛事、真人娱乐、电子游艺于一体的在线娱乐平台，提供安全便捷的游戏体验与全面的娱乐指南。">
+    <meta name="keywords" content="gvbet娱乐城,gvbet,在线娱乐,游戏平台,体育赛事,真人娱乐">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 头部 */
+        .site-header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 18px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
+        .logo-icon {
+            background: #e6b800;
+            color: #0f2027;
+            font-size: 24px;
+            font-weight: 800;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            box-shadow: 0 4px 8px rgba(230,184,0,0.3);
+        }
+        .logo-text h1 {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo-text p {
+            font-size: 13px;
+            color: #a0c4d0;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        .header-actions {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+        .btn-header {
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .btn-login {
+            background: transparent;
+            color: #e6b800;
+            border: 1px solid #e6b800;
+        }
+        .btn-login:hover {
+            background: rgba(230,184,0,0.1);
+        }
+        .btn-register {
+            background: #e6b800;
+            color: #0f2027;
+        }
+        .btn-register:hover {
+            background: #f0c400;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(230,184,0,0.3);
+        }
+        /* 导航 */
+        .nav-bar {
+            background: #ffffff;
+            border-bottom: 2px solid #eef2f7;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+        }
+        .nav-list li a {
+            display: block;
+            padding: 15px 28px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        .nav-list li a:hover,
+        .nav-list li a.active {
+            color: #e6a800;
+            border-bottom-color: #e6a800;
+        }
+        /* Hero 首屏 */
+        .hero {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2c5364 60%, #3a6b80 100%);
+            padding: 70px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(230,184,0,0.08);
+            border-radius: 50%;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .hero-text h2 {
+            font-size: 40px;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        .hero-text p {
+            font-size: 18px;
+            color: #c8dce6;
+            margin-bottom: 30px;
+            max-width: 520px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-hero-primary {
+            background: #e6b800;
+            color: #0f2027;
+            padding: 14px 36px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 8px 20px rgba(230,184,0,0.3);
+        }
+        .btn-hero-primary:hover {
+            background: #f0c400;
+            transform: translateY(-3px);
+        }
+        .btn-hero-secondary {
+            background: transparent;
+            color: white;
+            padding: 14px 36px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 16px;
+            border: 1px solid rgba(255,255,255,0.6);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-hero-secondary:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .hero-feature-box {
+            flex: 0 0 360px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .hero-feature-box h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #e6b800;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            font-size: 15px;
+        }
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        .feature-item .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #e6b800;
+            flex-shrink: 0;
+        }
+        /* 平台优势 */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h3 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a2a3a;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            color: #7f8c8d;
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section-padding {
+            padding: 70px 0;
+        }
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+        .adv-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px 24px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .adv-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .adv-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+            color: #e6a800;
+        }
+        .adv-card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #1a2a3a;
+        }
+        .adv-card p {
+            color: #5d6d7e;
+            font-size: 14px;
+        }
+        /* 热门游戏 */
+        .games-section {
+            background: #ffffff;
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .game-card {
+            border-radius: 16px;
+            overflow: hidden;
+            background: #f8f9fb;
+            border: 1px solid #eef0f4;
+            transition: all 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        .game-thumb {
+            height: 140px;
+            background: linear-gradient(135deg, #2c5364, #0f2027);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+        .game-thumb.g2 { background: linear-gradient(135deg, #4b6cb7, #182848); }
+        .game-thumb.g3 { background: linear-gradient(135deg, #c31432, #240b36); }
+        .game-thumb.g4 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+        .game-thumb.g5 { background: linear-gradient(135deg, #fc4a1a, #f7b733); }
+        .game-thumb.g6 { background: linear-gradient(135deg, #8e2de2, #4a00e0); }
+        .game-info {
+            padding: 20px;
+        }
+        .game-info h4 {
+            font-size: 17px;
+            margin-bottom: 6px;
+            color: #1a2a3a;
+        }
+        .game-info p {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-bottom: 12px;
+        }
+        .game-tag {
+            display: inline-block;
+            background: #eef6ff;
+            color: #2c6bc4;
+            border-radius: 20px;
+            font-size: 12px;
+            padding: 3px 12px;
+            font-weight: 600;
+        }
+        /* 娱乐指南 */
+        .guide-section {
+            background: #f5f7fa;
+        }
+        .guide-layout {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .guide-card {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            border-left: 6px solid #e6a800;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+        .guide-card h4 {
+            font-size: 20px;
+            color: #1a2a3a;
+            margin-bottom: 15px;
+        }
+        .guide-card ol {
+            padding-left: 20px;
+            color: #5d6d7e;
+        }
+        .guide-card ol li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        /* 常见问题 */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border: 1px solid #eef0f4;
+        }
+        .faq-item h4 {
+            color: #1a2a3a;
+            font-size: 17px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .faq-item h4::before {
+            content: 'Q';
+            background: #e6a800;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        .faq-item p {
+            color: #5d6d7e;
+            padding-left: 38px;
+            font-size: 15px;
+        }
+        .faq-item p::before {
+            content: 'A';
+            color: #2c6bc4;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        /* CTA 区域 */
+        .cta-section {
+            background: linear-gradient(135deg, #0f2027, #2c5364);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .cta-section h3 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+        .cta-section p {
+            color: #b8ccd6;
+            margin-bottom: 30px;
+            font-size: 17px;
+        }
+        .cta-section .btn-hero-primary {
+            font-size: 18px;
+            padding: 16px 48px;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #0b1a20;
+            padding: 40px 0 20px;
+            color: #8ba3ad;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h5 {
+            color: #e6b800;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footer-col ul li a {
+            color: #8ba3ad;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-col ul li a:hover {
+            color: #e6b800;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #5c7a86;
+        }
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .nav-list li a {
+                padding: 12px 14px;
+                font-size: 14px;
+            }
+            .hero-text h2 {
+                font-size: 30px;
+            }
+            .hero-feature-box {
+                flex: 1 1 100%;
+            }
+            .section-title h3 {
+                font-size: 26px;
+            }
+            .section-padding {
+                padding: 50px 0;
+            }
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .hero {
+                padding: 50px 0;
+            }
+            .hero-text h2 {
+                font-size: 26px;
+            }
+            .btn-hero-primary,
+            .btn-hero-secondary {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+            .logo-text h1 {
+                font-size: 22px;
+            }
+            .nav-list {
+                justify-content: flex-start;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">G</div>
+            <div class="logo-text">
+                <h1>gvbet娱乐城</h1>
+                <p>GVBET ONLINE CASINO</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <a href="#" class="btn-header btn-login">登录</a>
+            <a href="#" class="btn-header btn-register">立即注册</a>
+        </div>
+    </div>
+</header>
+
+<nav class="nav-bar">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">体育赛事</a></li>
+            <li><a href="#">真人娱乐</a></li>
+            <li><a href="#">电子游艺</a></li>
+            <li><a href="#">棋牌游戏</a></li>
+            <li><a href="#">优惠活动</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>开启精彩娱乐之旅</h2>
+                <p>gvbet娱乐城汇集全球热门娱乐项目，提供公平公正、安全稳定的高品质在线体验。无论您是资深玩家还是新手，都能在这里找到属于自己的乐趣。</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-hero-primary">立即体验</a>
+                    <a href="#" class="btn-hero-secondary">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-feature-box">
+                <h3>平台特色亮点</h3>
+                <div class="feature-item"><span class="dot"></span>专业运营团队，全天候服务</div>
+                <div class="feature-item"><span class="dot"></span>多样化游戏选择，丰富赛事覆盖</div>
+                <div class="feature-item"><span class="dot"></span>多重加密技术，保障账户安全</div>
+                <div class="feature-item"><span class="dot"></span>便捷存取款通道，快速到账</div>
+                <div class="feature-item"><span class="dot"></span>公平游戏环境，实时数据监控</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="section-title">
+            <h3>为什么选择 gvbet娱乐城</h3>
+            <p>我们致力于为每一位用户打造高品质、值得信赖的娱乐平台</p>
+        </div>
+        <div class="advantages-grid">
+            <div class="adv-card">
+                <div class="adv-icon">🛡️</div>
+                <h4>安全可靠</h4>
+                <p>采用先进的加密技术保护用户数据，严格风控体系，让每一次体验都安心无忧。</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">🎮</div>
+                <h4>丰富游戏</h4>
+                <p>涵盖体育赛事、真人视讯、电子游艺、棋牌娱乐等数百款热门产品供您选择。</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">⚡</div>
+                <h4>极致体验</h4>
+                <p>流畅稳定的平台运行，高清直播画面，让您沉浸于精彩纷呈的娱乐世界。</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">💬</div>
+                <h4>贴心服务</h4>
+                <p>7×24小时专业客服团队，及时响应您的需求，提供细致入微的帮助。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="games-section section-padding">
+    <div class="container">
+        <div class="section-title">
+            <h3>热门娱乐项目</h3>
+            <p>精选最受欢迎的平台游戏，满足不同用户的娱乐需求</p>
+        </div>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-thumb">🏟️</div>
+                <div class="game-info">
+                    <h4>体育赛事</h4>
+                    <p>覆盖全球主流足球、篮球、网球等赛事，实时滚球让您不错过每个精彩瞬间。</p>
+                    <span class="game-tag">热门推荐</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-thumb g2">🎥</div>
+                <div class="game-info">
+                    <h4>真人视讯</h4>
+                    <p>高清真人荷官在线发牌，百家乐、龙虎斗等经典游戏营造真实现场氛围。</p>
+                    <span class="game-tag">现场直播</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-thumb g3">🎰</div>
+                <div class="game-info">
+                    <h4>电子游艺</h4>
+                    <p>老虎机、捕鱼达人等趣味电子游戏，绚丽画面配上丰富玩法，惊喜不断。</p>
+                    <span class="game-tag">新游上架</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-thumb g4">🃏</div>
+                <div class="game-info">
+                    <h4>棋牌对战</h4>
+                    <p>德州扑克、斗地主、麻将等经典棋牌，与各地玩家同台竞技，考验智慧。</p>
+                    <span class="game-tag">经典棋牌</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-thumb g5">🎲</div>
+                <div class="game-info">
+                    <h4>彩票游戏</h4>
+                    <p>快乐彩、时时彩等热门彩种，开奖频率高，玩法简单易懂，机会触手可及。</p>
+                    <span class="game-tag">高频开奖</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-thumb g6">💎</div>
+                <div class="game-info">
+                    <h4>电竞竞猜</h4>
+                    <p>紧跟Dota2、LOL、CS2等热门电竞赛事，实时数据支持，享受观赛乐趣。</p>
+                    <span class="game-tag">电竞专区</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="guide-section section-padding">
+    <div class="container">
+        <div class="section-title">
+            <h3>新手娱乐指南</h3>
+            <p>轻松上手，快速开启您的gvbet娱乐城之旅</p>
+        </div>
+        <div class="guide-layout">
+            <div class="guide-card">
+                <h4>📝 注册与登录</h4>
+                <ol>
+                    <li>点击首页右上角"立即注册"按钮</li>
+                    <li>填写用户名、密码及联系方式</li>
+                    <li>完成手机或邮箱验证</li>
+                    <li>注册成功后即可登录平台</li>
+                </ol>
+            </div>
+            <div class="guide-card">
+                <h4>💰 存取款说明</h4>
+                <ol>
+                    <li>进入"个人中心"选择充值或提现</li>
+                    <li>选择支持的支付方式进行操作</li>
+                    <li>充值金额将实时到账</li>
+                    <li>提现申请将在规定时间内处理完成</li>
+                </ol>
+            </div>
+            <div class="guide-card">
+                <h4>🎯 选择游戏建议</h4>
+                <ol>
+                    <li>根据兴趣选择游戏类型</li>
+                    <li>新手可先尝试低门槛的电子游戏</li>
+                    <li>观看游戏规则说明再参与</li>
+                    <li>合理规划时间与预算，理性娱乐</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="section-title">
+            <h3>常见问题解答</h3>
+            <p>我们整理了一些用户关心的问题，希望能帮助您更好地了解平台</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h4>gvbet娱乐城有哪些游戏可以玩？</h4>
+                <p>平台提供体育赛事投注、真人视讯游戏、电子游艺、棋牌游戏、彩票以及电竞竞猜等多种类型的娱乐项目，丰富的选择能够满足不同用户的喜好。</p>
+            </div>
+            <div class="faq-item">
+                <h4>平台如何保障用户账户安全？</h4>
+                <p>我们采用行业标准的数据加密技术，并设有严格的风控系统。同时建议用户设置复杂密码并定期更换，避免使用公共网络进行敏感操作。</p>
+            </div>
+            <div class="faq-item">
+                <h4>充值后多久可以到账？</h4>
+                <p>通常情况下，充值操作完成后资金会实时到达您的账户。若遇到网络延迟等特殊情况，可联系在线客服协助查询处理。</p>
+            </div>
+            <div class="faq-item">
+                <h4>如何联系平台客服？</h4>
+                <p>平台提供7×24小时全天候客服支持，您可以通过网站右下角的在线聊天窗口、官方邮箱或电话热线与客服团队取得联系。</p>
+            </div>
+            <div class="faq-item">
+                <h4>是否有新手优惠或活动？</h4>
+                <p>gvbet娱乐城会不定期推出各类优惠活动，包括新用户注册礼包、存款红利、返水优惠等。建议您关注平台首页的"优惠活动"栏目获取最新动态。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h3>准备好加入 gvbet娱乐城了吗？</h3>
+        <p>注册即享精彩体验，开启您的专属娱乐之旅</p>
+        <a href="#" class="btn-hero-primary">立即注册 领取好礼</a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h5>关于我们</h5>
+                <ul>
+                    <li>平台介绍</li>
+                    <li>发展历程</li>
+                    <li>加入我们</li>
+                    <li>联系方式</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>游戏分类</h5>
+                <ul>
+                    <li>体育赛事</li>
+                    <li>真人视讯</li>
+                    <li>电子游艺</li>
+                    <li>棋牌游戏</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>帮助支持</h5>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>存取款指南</li>
+                    <li>规则条款</li>
+                    <li>责任博彩</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>热门活动</h5>
+                <ul>
+                    <li>新人礼包</li>
+                    <li>每日签到</li>
+                    <li>周末狂欢</li>
+                    <li>邀请有礼</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 gvbet娱乐城 版权所有 · 请理性参与娱乐，禁止未成年人访问 · 本平台仅供成年人使用</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+  </html>
